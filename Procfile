@@ -1,1 +1,1 @@
-web: uvicorn slack_bot_server.main:app --host 0.0.0.0 --port $PORT
+web: PYTHONPATH=src uvicorn slack_bot_server.main:app --host 0.0.0.0 --port $PORT
